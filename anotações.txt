@@ -1,0 +1,272 @@
+DECOLA TECH 2ª EDIÇÃO
+
+-dê seu toque
+-coloque no github
+-mentorias da guia atividades são obrigatórias
+-plataforma gamificada com xp,levels, desafios
+
+INTRODUÇÃO A LOGICA DE PROGRAMAÇÃO
+
+https://studio.code.org/s/mc/lessons/1/levels/1
+
+https://www.proprofsgames.com/wolf-sheep-and-cabbage/
+
+https://rachacuca.com.br/jogos/pinguins-numa-fria/
+
+FLUXOGRAMAS
+
+http://flowgorithm.org/download/index.html
+
+nome de variáveis separados por vírgula, sem espaço e sem acento
+
+nota quebrada com ponto e não vírgula
+
+ESTRUTURA DE TOMADA DE DECISÃO 
+faz parte de 60% da programação, IMPORTANTE!
+
+CONCATENAÇÃO
+
+string & variavel
+ou
+string + variavel
+
+ESTRUTURA DE REPETIÇÃO
+
+junto com tomada de decisão faz parte de 70% da programação, IMPORTANTE!
+
+LINGUAGENS DE PROGRAMAÇÃO
+
+alto nível maioria / baixo nível Assembly
+
+compiladas direto no SO/ interpretadas por um programa e depois pelo SO python, java
+
+PORTUGOL
+
+http://lite.acad.univali.br/portugol/
+
+caracter só aceita 1 letra usar cadeia
+
+MATRIZ
+
+coleção de variáveis de mesmo tipo
+
+índice para indicar posição dentro da matriz
+
+cada linha entre {}
+
+cadeia cesta [\\linha][\\coluna]={}
+
+VETOR
+matriz de 1 só dimensão, só coluna por exemplo
+
+ESTRUTURA DE DADOS
+
+Organizar dados na memoria
+
+Serve para pequenas e grandes qtds de dados
+
+Algoritmo para manipular dados
+
+portugol para=for
+
+na matriz usar 2 for para percorrer linha e coluna
+
+TIPO DE DADO REGISTRO
+
+formato especial diferente do array
+
+armazena dados de tipos diferentes
+
+acessar campos atraves de .
+cliente.cpf
+
+LISTAS
+
+diferente de array a lista possui tamanho flexível
+
+TIPOS
+
+ligadas: nós, semelhante indice, um nó conhece o seu conteúdo e o do próximo
+
+duplamente ligadas: um nó conhece o seu conteúdo, o do próximo e anterior seta bidirecional
+
+PILHAS / STACK
+
+LIFO 
+FIFO
+
+FILA
+remove o que esta na fila a mais tempo
+FIFO
+
+ARVORE
+elementos de forma hierarquica
+raiz sempre no meio
+
+HASH
+espalhamento, nao ordenada
+associar valores(indices) a chaves(informações)
+
+GRAFO
+relação entre objetos(vértices,nós)
+relacionamento(arestas)
+RedeSocial
+
+relacionamento para todos os lados: frente,tras etc.
+
+GIT (software Linus) E GITHUB (Repositório online Microsoft)
+
+2005 Linus Torvalds
+
+TODO SOFTWARE É COLABORATIVO
+
+GUI X CLI 
+interface grafica x linha de comando
+
+COMANDOS
+dir (listar diretorios)
+cd (mudar de pasta)
+cd.. (subir um nivel de pasta)
+cls (limpar a tela)
+TAB (autocompletar)
+mkdir (fazer pasta)
+echo (print)
+echo hello > hello.txt criar arquivo
+del (deletar arquivo)
+rmdir (deletar pasta)
+
+FLAGS
+complementam os comandos
+
+INSTALAR GIT
+marcar instalar git bash Here e git GUI Here
+Editor: Use Vim
+Let Git Decide
+next
+next
+next
+Checkout Windows Style
+next
+next
+next
+Credential Helper: Git Credential Manager Core
+next
+next
+
+GIT POR BAIXO DOS CÓDIGOS
+
+Usa SHA1 ENCRIPTAÇÃO 40 digitos 
+verifica se o arquivo sofreu modificações
+gera 1 chave para o texto,se mudar uma virgula gera uma chave diferente, se voltar atras da mudança ficando identico ao primeiro texto gera a mesma chave.
+
+comando: openssl sha1 texto.txt
+
+OBJETOS DO GIT
+
+BLOBS contem metadados do arquivo (sha,tamanho,conteúdo)
+
+TREES contem metadados do arquivo (sha,tamanho,conteúdo) e armazena blobs + nome do arquivo,pode apontar para outra trees, aponta para blobs e outras trees
+
+COMMITS aponta para uma tree,para um parente,autor,msg
+
+se mudar o sha da blob altera o sha da tree e consequentemente do commit
+
+AUTENTICAÇÃO GITHUB
+mudou em 2021 não é mais só usuario e senha
+
+CHAVE SSH
+chave publica e privada para reconhecer sua máquina
+
+CRIAR SSH
+
+no cli: 
+
+ssh-keygen -t ed25519 -C priscila.dalt@aluno.faculdadeimpacta.com.br
+
+enter
+
+colocar uma senha
+
+navegar até a pasta .ssh
+abrir o arquivo da chave.pub
+copiar chave
+
+no git:
+clicar no profile>settings>ssh e gpg keys>add new
+preencher titulo
+colar chave
+add
+
+voltar no cli:
+iniciar SSH agente
+
+eval $(ssh-agent -s)
+
+passar a chave privada para o agente
+
+ssh-add id_ed25519
+digitar senha priddssh
+
+CLONAR REPOSITORIO
+no git clicar em code>aba SSH>copiar
+
+no cli:
+git clone (colar)
+
+Yes 
+
+TOKENS
+outra forma de autenticação
+
+no git:
+profile>settings>developer settings>personal access tokens>generate
+
+adicionar nota
+escolher expiração
+marcar opção repo
+generate token
+copiar token e salvar
+
+PARA CLONAR
+copiar da aba https
+git clone (colar)
+abre uma janela
+colar token
+sign in
+
+COMANDOS
+criar pasta 
+entrar nela
+git init (cria repositório no github)
+ls -a para ver pastas ocultas
+
+CONFIGURAR GIT NA PASTA
+
+git config --global user.email "priscila.dalt@aluno.faculdadeimpacta.com.br"
+
+git config --global user.name Priscila Da Dalt
+
+criar arquivo markdown
+MARKDOWN: tipo de arquivo mais humano do que HTML
+
+git add *
+git commit -m "commit inicial"
+
+git add prepara arquivo para entrar em ação (commit)
+arquivo fica no estado staged
+commit sai do staged
+
+git status
+ver status do arquivo
+
+mv arquivo.md ./receitas
+mover arquivo para pasta
+
+git config --list
+verifica configurações github como nome e email 
+
+git config --global --unset user.name
+alterar o nome do usuario
+
+git remote add origin https://github.com/prisciladd/livro-receitas.git
+adicionar origem para onde vamos empurrar, origin é apelido pode ser qlq nome

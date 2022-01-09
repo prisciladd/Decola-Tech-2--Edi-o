@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Prisc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-04 09:43:46 "/>
+        <attribute name="created" value="UHJpc2M7Tk9URS1OT1ZPLUFDRVI7MjAyMi0wMS0wNDsiMDk6Mjc6MTUgIjsyNzA4"/>
+        <attribute name="edited" value="UHJpc2M7Tk9URS1OT1ZPLUFDRVI7MjAyMi0wMS0wNDsiMDk6NDM6NDYgIjsyOzI4MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jan, fev, mar, abr, media" type="Real" array="False" size=""/>
+            <input variable="jan"/>
+            <input variable="fev"/>
+            <input variable="mar"/>
+            <input variable="abr"/>
+            <assign variable="media" expression="(jan+fev+mar+abr)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;PARAB&#201;NS voc&#234; atingiu a meta do m&#234;s e receber&#225; um abono de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; quase atingiu a meta do m&#234;s e receber&#225; um abono de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Prisc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-04 09:56:49 "/>
+        <attribute name="created" value="UHJpc2M7Tk9URS1OT1ZPLUFDRVI7MjAyMi0wMS0wNDsiMDk6NDM6NDcgIjsyNzEx"/>
+        <attribute name="edited" value="UHJpc2M7Tk9URS1OT1ZPLUFDRVI7MjAyMi0wMS0wNDsiMDk6NTY6NDkgIjsyOzI4MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <output expression="&quot;Ol&#225;, qual seu nome?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;E o seu sobrenome?&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Bem vindo(a) &quot; &amp;nome&amp;&quot; &quot;&amp;sobrenome" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
