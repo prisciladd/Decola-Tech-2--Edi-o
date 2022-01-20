@@ -270,3 +270,361 @@ alterar o nome do usuario
 
 git remote add origin https://github.com/prisciladd/livro-receitas.git
 adicionar origem para onde vamos empurrar, origin é apelido pode ser qlq nome
+
+VISUAL STUDIO
+instalar, escolher carga de trabalho .net
+criar novo projeto
+nome do projeto e solução iguais
+
+DEBUG
+é feito adicionando um breakpoint
+
+f9 adicionar breakpoint na linha selecionada
+
+inspeção na hora de depurar
+menu depurar quickWatch
+
+TESTES
+botao direito no metodo>criar testes de unidade
+método para teste tem que ser public
+
+PADRÃO AAA
+Arrange (organizar) =  definir entrada e saida
+Act (agir) = guardar resultado do metodo numa variavel
+Assert (declarar)= comparar saida esperada com saida
+
+escrever os testes
+
+menu teste > executar todos
+
+.NET
+framework que permite a comunicação entre varias linguagens que tem uma infraestrutura comum CLI
+
+C#
+linguagem fortemente tipada baseada em C++
+
+Solução é um container com todos os projetos dentro
+
+NAMESPACE
+organizar classes
+
+colocar using nome do namespace para poder usar as classes naquele arquivo.
+semelhante ao import
+
+CLASSES
+tudo dentro da classe são membros 
+
+INTERFACE
+classe molde para outras classes
+é obrigado a implementar todos os metodos da interface 
+
+ENUM
+conjunto de constantes iniciando em 0 aumenta de 1 em 1
+
+.NET
+1997 surgiu o visual studio
+1999 surge ferramenta web e common runtime
+1999 acordo sun x microsoft, criação do C#
+2000 surge .net
+2001 Icaza cria Mono
+2003 CLR2 converte varias linguagens numa linguagem comum
+2010 f# lançamento Azure criador do C# começa a trabalhar no typescript
+2011 Icaza cria xamarin C# para android
+2014 Microsoft foca em cloud. .net foundation. surge ASP.net core
+2015 Visual Studio Code
+2016 microsoft adquire xamarin. Visual Studio for Mac. .Net core 1.0 totalmente novo open source e multiplataforma, grande avanço
+2019 .net framework 4.8 c#7
+     .net core	    3.0	c#8
+2020 .net 5 juntará framework + core. framework vai morrer
+
+Resumo: Microsoft começou com linguagem de programação, depois muitos anos foco em sistema operacional e após plataforma .net varias linguagens convertidas em 1 só pelo CLR em 2014 foco em cloud e open source	
+
+cada implementação com seu runtime
+
+3 linguagens para .net
+C# F# VB 
+evite VB
+
+onde usar: desktop,mobile,games,iot,ia,etc
+
+quem usa: casas bahia,saraiva,stack overflow,etc
+
+https://dotnet.microsoft.com/en-us/download
+
+instalar SDK
+
+abri cmd
+dotnet --version
+
+vs code não é IDE é editor de texto
+
+instalar extensões c# e c#extensions
+
+dotnet --help
+dotnet --info
+
+NUGET
+gerenciador de pacotes
+trechos de código reutilizavel 
+nuget publico e privado
+
+APLICAÇÃO CONSOLE
+é uma aplicação que roda no cmd
+
+COMANDOS
+dotnet new -n DigitalInovationOne
+
+explorer .
+abre pasta
+
+code .
+abre pasta no vs code
+na mensagem sobre debug clicar yes
+adicionou pasta bin
+
+dotnet restore
+restaura pacotes
+
+todo projeto gera um executável
+
+dotnet build
+compilar projeto e criar dll
+
+dotnet run
+
+C#
+surgiu junto com .net, orientada a obj, fortemente tipada
+Compilador = Roslyn
+c# compilado em uma linguagem intermediaria IL, que é armazenada em disco num arquivo chamado assembly com extensão .dll ou .exe. IL é carregado no CLR que traduz em linguagem de máquina 
+
+ESTRUTURA
+programas
+namespaces
+tipos=classes
+membros=métodos
+assembly=.dll .exe
+
+boas praticas namespace iniciar com nome do projeto.pasta
+
+VARIAVEIS
+2 tipos
+
+tipo de valor: variavel guarda seu valor num espaço de memoria (int,char,bool)
+se alterar 1 não altera outro
+
+tipo de referência: variavel guarda referencia a um espaço na memoria (class,array,string)
+se alterar 1 altera outro pois os 2 apontam para o mesmo local na memoria
+
+INSTRUÇÕES 
+ações do programa (if,switch,while,for)
+
+Console.ReadLine(); = input
+
+! é not
+
+foreach é para cada
+exp para cada string no array faça
+
+static void: significa que metodo não tem return
+
+TRY vai tentar fazer
+CATCH se erro no try captura a excessão
+double.parse() converte string para double
+FINALLY finalmente, após try e catch faz o que esta no finally
+
+ARRAY
+multidimensional = matriz
+
+CLASSES
+tipo fundamental, gera objeto
+estados=campos ações=métodos
+public class Ponto()
+
+OBJETOS
+instâncias de uma classe
+
+para criar novo:
+Ponto p1=new Ponto(0,0)
+
+não é necessário desalocar memoria depois de usar o objeto o garbage colector do .net faz isso
+
+MEMBROS DA CLASSE
+
+ESTATICO: classe
+INSTANCIA: do objeto
+
+acessibilidade: publico,privado,protegido(só classe filho acessa),interno(somente do mesmo project ou seja assembly)
+
+tem herança
+
+usar verbos no nome do método 
+
+método static pertence a classe não ao objeto, na hora de chamar usar classe.metodo
+
+OUT
+criar variável na hora de chamar o método
+
+STRUCTS
+tipo de valor que não requer alocação de heap(memoria)
+variavel aloca na stack (memória temporária,tem limite)
+não aceita herança
+util para pequenas estruturas
+
+exp:
+public struct Ponto
+
+INTERFACES
+geralmente não implementa possui somente a assinatura do método quem herdar tem que implementar
+
+exp:
+interface IDataBound
+{
+	void Bind(Binder b);
+}
+
+ENUM
+conjunto de constantes
+
+exp:
+
+enum Cor
+{
+	Vermelho,
+	Verde,
+	Azul
+}
+
+PRATICA
+
+dotnet new console -n Revisao
+cd Revisao
+code . (para abri no vs code)
+
+tudo que estiver no main do Program.cs executa ao iniciar
+
+Console.WriteLine("Informa a opção desejada: ");
+Console.WriteLine("1- Inserir novo aluno: ");
+Console.WriteLine("2- Listar aluno");
+Console.WriteLine("3- Calcular média geral: ");
+Console.WriteLine("X- Sair: ");
+Console.WriteLine();
+...
+
+var para poder setar tipos diferentes de dados
+
+POO
+
+PARADIGMA: conjunto de regras, modelo padrão
+LINGUAGEM: implementa o conjunto de regras
+
+C# implementa 6 paradigmas
+
+ENCAPSULAMENTO
+proteger classe e definir limites para alterações
+
+ERRO:
+O propriedade não anulável 'Nome' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.
+SOLUÇÃO:
+acrescentar = default!
+
+public string Nome { get; set; } = default!;
+
+POLIMORFISMO
+2 tipos:
+
+1-em tempo de compilação ou Overload/Early Binding
+muda o numero de parametros recebidos
+
+2-em tempo de execução ou Override/Late Binding
+sobreescreve o método
+
+CLASSE ABSTRATA
+serve como modelo exclusivamente para ser herdada
+método abstrato obigatoriamente deve ser sobreescrito
+
+CLASSE SELADA
+impede herança
+
+CLASSE SYSTEM.OBJECT
+mãe de todas as classes
+
+CLASSE INTERFACE
+semelhante a classe abstrata, porém permite herança multipla
+pode fazer implementação assim os assinantes da interface não precisam implementar
+antes do .net core 3 não é possivel implementar na interface
+
+*boas práticas:
+colocar I antes do nome da classe
+
+CTRL + . para fazer import automático
+
+ARQUIVOS
+namespace IO
+3 classes estáticas
+
+file
+directory
+path
+
+STREAM
+exp: videos do youtube que carregam aos poucos conforme você assiste, não precisa esperar o vídeo todo carregar para depois assistir.
+
+quando precisar escrever arquivos de texto gigantes usar o stream através do File.CreateText(caminho)
+
+.NET RUNTIME
+transforma códigos em binários
+
+TIPOS DE CONSTRUTORES
+um construtor define valores padrão no método
+
+uma classe pode ter vários construtores
+
+toda classe tem um construtor padrão implicito
+
+atalho para criar construtor
+ctor + TAB
+
+CONSTRUTOR PRIVADO
+não permite instanciar
+usado no padrão de projeto SINGLETON, permite uma única instância, objeto vai ser sempre o mesmo
+
+CONSTRUTOR NA HERANÇA
+Filhos tem que ter mesmo construtor da classe mãe
+pode acrescentar parametros na classe filha
+
+:base(parametros) para passar parametros para a classe mãe
+
+GET E SET
+atribuir valor em uma variável de maneira controlada com validações
+
+PROPRIEDADES
+prop + TAB
+facilita a escrita de get e set, não cria 2 métodos get e set, já estão contidos na propriedade
+
+MODIFICADORES
+
+-READONLY bloqueia campo contra alterações que não seja na inicialização e no construtor
+
+DELEGATES
+baixo nível,referencia, ponteiro, callback
+pode ou não ter retorno
+passar um método como parametro de outro método o delegate
+
+deve ter a mesma quantidade de parametros do metodo invocado (invoke), ou seja a mesma assinatura
+
+MultiCast Delegate
+chamar varios métodos na sequencia FIFO
+
+EVENTOS
+comunicação entre objetos
+exp: clicar em botão e realizar algo
+
+precisa ter um delegate
+
+funciona através de publisher/subscriber
+
+ARRAY/VETOR/MATRIZ
+coleção de valores de mesmo tipo, tamanho fixo
+
+array multidimensional/matriz
+array[1,1]
