@@ -628,3 +628,13 @@ coleção de valores de mesmo tipo, tamanho fixo
 
 array multidimensional/matriz
 array[1,1]
+
+CLASSE ARRAY
+facilita a manipulação de arrays
+
+-Predicate
+Expressão
+
+elemento => elemento == valor
+elemento é como uma variável que compara se elemento atual é == valor procurado
+como se fosse um for
