@@ -638,3 +638,24 @@ Expressão
 elemento => elemento == valor
 elemento é como uma variável que compara se elemento atual é == valor procurado
 como se fosse um for
+
+COLEÇÃO GENÉRICA LISTA/FILA/DICIONARIO
+semelhante ao array porém mais alto nível
+tamanho não é fixo
+
+COLEÇÃO ESPECÍFICA FILA(queue)/PILHA(stack)
+não dá para inserir por índice
+
+DICIONARIOS
+chave e valor
+chave em hash busca mais performatica
+chave única
+
+-Busca
+sempre busca pela chave e sempre retorna o valor
+
+OPERAÇOES LINQ
+consulta padronizada SQL
+
+exp: from,where,orderby
+
